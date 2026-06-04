@@ -36,8 +36,11 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
   }
 
   function getRandomPair(friendList: string[]): [string, string] {
-    const shuffled = [...friendList].sort(() => Math.random() - 0.5);
-    return [shuffled[0], shuffled[1]];
+    const index1 = Math.floor(Math.random() * friendList.length);
+    let index2 = Math.floor(Math.random() * friendList.length);
+    if (index1 === index2) index2++;
+    if (index2 >= friendList.length) index2 = index2 - 2;
+    return [friendList[index1], friendList[index2]];
   }
 
   async function handleChoice(winner: string) {
