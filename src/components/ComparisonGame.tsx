@@ -73,10 +73,8 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
       <div
         className="container"
         style={{
-          minHeight: "100vh",
+          height: "100%",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
         }}
       >
         <div className="card">
@@ -90,10 +88,8 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
       <div
         className="container"
         style={{
-          minHeight: "100vh",
+          height: "100%",
           display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
         }}
       >
         <div className="card" style={{ textAlign: "center" }}>
@@ -110,19 +106,13 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
 
   return (
     <div
-      className="container"
       style={{
-        minHeight: "100vh",
+        height: "100%",
         display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
       }}
     >
-      <div
-        className="card"
-        style={{ textAlign: "center", maxWidth: "900px", width: "100%" }}
-      >
-        <h2>⏳ Qui vivra le plus longtemps ?</h2>
+      <div className="card" style={{ textAlign: "center", width: "100%" }}>
+        <h2>{import.meta.env.VITE_METRIC}</h2>
 
         <div style={{ margin: "30px 0" }}>
           <p className="progress-text">
@@ -149,17 +139,13 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
           </div>
         </div>
 
-        <div
-          className="flex-center"
-          style={{ marginBottom: "20px", alignItems: "center" }}
-        >
+        <div className="flex-center" style={{ marginBottom: "20px" }}>
           <button
             onClick={() => handleChoice(currentPair[0])}
             className="choice-btn"
             style={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
               gap: "20px",
             }}
           >
@@ -193,7 +179,6 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
             style={{
               display: "flex",
               flexDirection: "column",
-              alignItems: "center",
               gap: "20px",
             }}
           >

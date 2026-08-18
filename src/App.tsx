@@ -1,7 +1,8 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import { Home } from './pages/Home'
-import { RankingPage } from './pages/RankingPage'
-import './App.css'
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Home } from "./pages/Home";
+import { RankingPage } from "./pages/RankingPage";
+import "./App.css";
+import { AllRankingsPage } from "./pages/AllRankingsPage";
 
 function App() {
   return (
@@ -9,9 +10,10 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/ranking" element={<RankingPage />} />
+        <Route path="/all-rankings" element={<AllRankingsPage />} />
       </Routes>
     </BrowserRouter>
-  )
+  );
 }
 
-export default App
+export default App;

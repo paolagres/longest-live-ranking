@@ -19,3 +19,9 @@ export interface Ranking {
   wins: number
   total_comparisons: number
 }
+
+export interface RankingSnapshot {
+  id?: string
+  metric: string
+  ranking: Ranking[]
+}
