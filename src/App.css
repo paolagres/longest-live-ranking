@@ -299,11 +299,11 @@ tbody td {
   }
 
   .container {
-    padding: 20px !important;
+    padding: 20px;
   }
 
   .ranking-container {
-    padding: 10px !important;
+    padding: 10px;
   }
 
   h1 {
