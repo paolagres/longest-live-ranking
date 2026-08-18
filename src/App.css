@@ -157,6 +157,10 @@ body {
   margin-bottom: 20px;
 }
 
+.progress-container {
+  margin-bottom: 40px;
+}
+
 h1 {
   font-size: 36px;
   font-weight: 800;
@@ -309,6 +313,7 @@ tbody td {
 
   h2 {
     font-size: 22px;
+    margin-bottom: 10px;
   }
 
   .choice-btn {
@@ -339,7 +344,12 @@ tbody td {
   }
 
   .progress-text {
-    font-size: 16px;
+    font-size: 14px;
+    margin-bottom: 0;
+  }
+
+  .progress-container {
+    margin-bottom: 20px;
   }
 
   .flex-center {

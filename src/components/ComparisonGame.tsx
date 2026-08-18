@@ -73,7 +73,6 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
       <div
         className="container"
         style={{
-          height: "100%",
           display: "flex",
         }}
       >
@@ -88,7 +87,6 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
       <div
         className="container"
         style={{
-          height: "100%",
           display: "flex",
         }}
       >
@@ -105,16 +103,11 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
   const progress = (completedComparisons / maxComparisons) * 100;
 
   return (
-    <div
-      style={{
-        height: "100%",
-        display: "flex",
-      }}
-    >
+    <div style={{ display: "flex" }}>
       <div className="card" style={{ textAlign: "center", width: "100%" }}>
         <h2>{import.meta.env.VITE_METRIC}</h2>
 
-        <div style={{ margin: "30px 0" }}>
+        <div className="progress-container">
           <p className="progress-text">
             Question {completedComparisons + 1} of {maxComparisons}
           </p>
@@ -125,7 +118,7 @@ export function ComparisonGame({ maxComparisons, onComplete }: Props) {
               background: "#e0e0e0",
               borderRadius: "10px",
               overflow: "hidden",
-              margin: "10px 0",
+              margin: "5px 0",
             }}
           >
             <div

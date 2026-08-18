@@ -26,6 +26,7 @@ export function Home() {
           alignItems: "center",
           flexDirection: "column",
           gap: "20px",
+          justifyContent: "space-between",
         }}
       >
         <ComparisonGame maxComparisons={10} onComplete={handleComplete} />
